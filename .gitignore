@@ -1,0 +1,8 @@
+__pycache__/
+.keops_cache/
+.ipynb_checkpoints/
+/results/new/
+/tables/
+/figures/
+build/
+*.egg-info/

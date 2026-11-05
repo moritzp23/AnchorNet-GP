@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "angp"
+version = "0.1.0"
+description = "Low-rank FITC Gaussian processes with AnchorNet landmarks, trained in single precision"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "Moritz Poguntke"}]
+requires-python = ">=3.10"
+dependencies = ["torch>=2.0", "numpy"]
+
+[project.optional-dependencies]
+keops = ["pykeops>=2.2"]
+sklearn = ["scikit-learn"]
+
+[tool.setuptools]
+packages = ["angp"]

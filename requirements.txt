@@ -1,0 +1,9 @@
+# Versions used for the paper (Python 3.11, CUDA 12.4, NVIDIA A40).
+# Install torch first with the wheel that matches your CUDA version, see README.md.
+torch==2.5.1
+pykeops==2.3
+numpy>=1.23.5,<2.3     # the paper used 2.4.3, which works but is outside scipy 1.14.1's range
+scipy==1.14.1
+pandas==2.2.3
+matplotlib==3.9.3
+bayesian_benchmarks @ git+https://github.com/moritzp23/bayesian_benchmarks.git@674d48164e8405be2e741430afacdd7fb3d485a4
